@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-size: 80%;
+}
+
+h2 {
+    font-size: 120%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 95%;
+    justify-content: center;
+    text-align: center;
+}
+
+/* HOME */
+
+.background-home {
+    background-image: url(./img/background-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    box-shadow: -4px 22px 10px 0px rgba(0,0,0,0.1);
+    border-radius: 0 0 3rem 3rem ;
+}
+
+.section-home {
+    position: relative;
+    display: flex;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.box-home {
+    background-color: rgba(50, 50, 58, 0.65);
+    padding: 3rem;
+    margin-bottom: 4rem;
+}
+
+.btn-flex {
+    display: flex;
+    align-items: center;
+}
+
+.btn-flex hr {
+    background-color: white;
+    width: 5px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 8px;
+}
+
+
+.btn-contact {
+    background-color: rgba(50, 50, 58, 0.65);
+    padding: 1rem 2rem;
+    border: none;
+    margin-top: 2rem;
+}
+
+.btn-contact a {
+    color: white;
+}
+
+.btn-contact:hover {
+    background-color: rgb(99, 95, 91);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* FIGURE PRHASE */
+
+.img-frase {
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+}
+
+/* SECTION EMPHASIS */
+
+.title-lancamento {
+    margin:  2rem auto;
+    display: flex;
+    align-items: center;
+    max-width: 95%;
+}
+
+.title-lancamento hr {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(70, 67, 67);
+    margin-left: 8px;
+}
+
+.container-section-2 {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    max-width: 94%;
+}
+
+.section-emphasis-elements {
+    display: flex;
+    
+}
+
+.img-local {
+    width: 80%;
+    text-align: center;
+}
+
+.text-empashis {
+    display: grid;
+    text-align: center;
+    gap: 2rem;
+    margin-left: 1rem;
+}
+
+.space-family h2 {
+    margin: 2rem;
+}
+
+.squad-family img {
+    width: 100%;
+}
+
+.squad-family p {
+    margin: 2rem;
+}
+
+.img-flex-family {
+    background-image: url(./img/back-family-img.png);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-flex-family img {
+    width: 46.7%;
+    margin: 15px;
+    max-width: 95%;
+}
+
+
+/* HOME HEALTH */
+
+.home-health h2 {
+    margin: 2rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.icons img {
+    width: 50%;
+}
+
+.icons p {
+    font-size: 1.5rem;
+}
+
+.planta-padrao {
+    margin-top: 2rem;
+}
+
+/* ENVORIMENTS */
+
+.envi-h1 {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.envi-h1 hr {
+    width: 55%;
+    background-color: rgb(70, 67, 67);
+    height: 4px;
+    margin-right: 8px;
+}
+
+.flex-enviroments img{
+    margin: 1rem;
+}
+
+/* CONTACT */
+
+.contact-h1 {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
+.contact-h1 hr {
+    width: 100%;
+    margin-left: 8px;
+    height: 4px;
+    background-color: rgb(70, 67, 67);
+}
+
+.contact-group {
+    padding: 1rem;
+    background-image: url(./img/background-contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-group h2 {
+    margin: 2rem;
+}
+
+.text-contact {
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.text-contact p {
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.icons-contact {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-between;
+}
+
+.icons-contact img {
+    width: 30%;
+}
+
+.contact-msg h2{
+    margin: 2rem;
+}
+
+.contact-msg form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-msg form input {
+    background-color: #DBE3EB;
+    margin: 5px;
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.contact-msg form textarea {
+    background-color: #DBE3EB;
+    border: none;
+    border-bottom: 2px solid black  ;  
+    border-radius: 4px;
+    padding: 6px;
+    margin: 5px;
+}
+
+.btn-contact {
+    text-align: left;
+    justify-content: left;
+}
+
+.btn-contact-flex {
+    display: flex;
+}
