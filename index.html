@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dubai</title>
+    <title>Lancamento - Prudente</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
                 <div class="btn-flex">
                     <hr>
                     <button class="btn-contact">
-                        <a href="#">FALE COM O CORRETOR</a>
+                        <a href="#contact">FALE COM O CORRETOR</a>
                     </button>
                 </div>
             </div>
@@ -84,13 +84,22 @@
                         </div>
                     </div>
 
-                    <div class="planta-padrao">
-                        <img src="./img/img-aptos/planta/planta-padrão.png" alt="">
+                    <div id="fade" class="hide"></div>
+
+                    <div id="modal" class="hide">
+                        <span class="close-modal">&times;</span>
+                        <div>
+                            <img src="./img/img-aptos/planta/planta-padrão.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="planta-padrao open-modal">
+                        <img class="open-modal" src="./img/img-aptos/planta/planta-padrão.png" alt="">
                     </div>
 
                     <h2>TERRAÇO - 53,701m²</h2>
 
-                    <div>
+                    <div class="planta-terraco">
                         <img src="./img/img-aptos/planta/planta-terraco-1.png" alt="">
                     </div>
                     
@@ -151,15 +160,17 @@
                     </form>
                     <div class="btn-contact-flex">
                         <hr>
-                        <button class="btn_contact">
+                        <button class="btn-contact">
                             <p>Enviar</p>
                         </button>
                     </div>
                 </div>
+
             </div>
 
         </section>
 
     </main>
 </body>
+<script src="./script/modal.js"></script>
 </html>
