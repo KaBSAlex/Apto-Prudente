@@ -40,7 +40,7 @@ h2 {
 /* HOME */
 
 .background-home {
-    background-image: url(./img/background-home.jpg);
+    background-image: url(../img/background-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -67,6 +67,7 @@ h2 {
 .btn-flex {
     display: flex;
     align-items: center;
+
 }
 
 .btn-flex hr {
@@ -76,7 +77,6 @@ h2 {
     margin-top: 30px;
     margin-right: 8px;
 }
-
 
 .btn-contact {
     background-color: rgba(50, 50, 58, 0.65);
@@ -169,10 +169,6 @@ h2 {
 
 /* HOME HEALTH */
 
-.home-health {
-    position: ;
-}
-
 .home-health h2 {
     margin: 2rem;
 }
@@ -241,7 +237,7 @@ h2 {
 
 .contact-group {
     padding: 1rem;
-    background-image: url(./img/background-contact.png);
+    background-image: url(../img/background-contact.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -260,10 +256,9 @@ h2 {
     font-size: 1rem;
 }
 
-.icons-contact {
+.icons-contact nav {
     display: flex;
     margin: 2rem;
-    justify-content: space-between;
 }
 
 .icons-contact img {
@@ -274,6 +269,7 @@ h2 {
     margin: 2rem;
 }
 
+/* INPUTS CONTACT */
 .contact-msg form {
     display: flex;
     flex-direction: column;
@@ -299,13 +295,40 @@ h2 {
 
 .btn-contact-flex {
     display: flex;
-    margin: 1rem;
+    margin-top: .5rem;
+    margin-left: 5px;
+    margin-bottom: 2rem;
 }
 
-.btn-contact {
-    text-align: left;
-    justify-content: left;
-    padding: 1rem 2rem;
+.btn-contact-footer {
+    background-color: rgba(50, 50, 58, 0.65);
+    border: 0;
+    padding: .5rem 2rem;
+    margin-top: 0;
+    margin-left: 5px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btn-contact-flex :hover {
+    background-color: rgb(99, 95, 91);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(67, 71, 71);
+    width: 100%;
+    height: 20vh;
+}
+
+.footer-p p
+ {
+    color: white;
+    position: relative;
+    top: 3.5rem;
 }
 
 /* MODAL */
@@ -320,7 +343,7 @@ h2 {
     z-index: 5; 
 }
 
-#modal {
+#modal-planta-padrao {
     position: fixed;
     margin: 0 auto;
     top: 50%;
@@ -329,13 +352,13 @@ h2 {
     z-index: 10;
 }
 
-#modal img {
+#modal-planta-padrao img {
     width: 100vw;
     max-width: 90vw;
     height: 100%;
 }
 
-.open-modal {
+.open-modal-planta {
     cursor: pointer;
 }
 
@@ -348,12 +371,12 @@ h2 {
     right: 10px;
 }
 
-#modal.hide,
+#modal-planta-padrao.hide,
 #fade.hide {
     opacity: 0;
     z-index: -1;
 }
 
-#modal, #fade {
+#modal-planta-padrao, #fade {
     transition: .5s;
 }

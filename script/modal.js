@@ -1,6 +1,7 @@
-const openModalBtn = document.querySelector(".open-modal");
+const openModalPlanta = document.querySelector(".open-modal-planta");
+
 const closeModalBtn = document.querySelector(".close-modal");
-const modal = document.querySelector("#modal");
+const modal = document.querySelector("#modal-planta-padrao");
 const fade = document.querySelector("#fade");
 
 const toggleModal = () =>  {
@@ -8,6 +9,7 @@ const toggleModal = () =>  {
     fade.classList.toggle("hide")
 }
 
-[openModalBtn, closeModalBtn, fade].forEach((el) => {
+[openModalPlanta, closeModalBtn, fade].forEach((el) => {
     el.addEventListener("click", () => toggleModal());
 });
+

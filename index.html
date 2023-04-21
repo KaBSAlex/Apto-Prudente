@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lancamento - Prudente</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- API -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/scrollReveal.css">
+
 </head>
 <body>
     <main>
@@ -85,21 +92,19 @@
                     </div>
 
                     <div id="fade" class="hide"></div>
-
-                    <div id="modal" class="hide">
+                    
+                    <div id="modal-planta-padrao" class="hide">
                         <span class="close-modal">&times;</span>
-                        <div>
-                            <img src="./img/img-aptos/planta/planta-padrão.png" alt="">
-                        </div>
+                        <div><img src="./img/img-aptos/planta/planta-padrão.png" alt=""></div>
                     </div>
 
-                    <div class="planta-padrao open-modal">
+                    <div class="planta-padrao open-modal-planta">
                         <img class="open-modal" src="./img/img-aptos/planta/planta-padrão.png" alt="">
                     </div>
 
                     <h2>TERRAÇO - 53,701m²</h2>
 
-                    <div class="planta-terraco">
+                    <div class="planta-terraco open-modal-planta-terreo">
                         <img src="./img/img-aptos/planta/planta-terraco-1.png" alt="">
                     </div>
                     
@@ -145,9 +150,17 @@
                     </div>
 
                     <div class="icons-contact">
-                        <a href="#"><img src="./icons/telephone-call.png" alt=""></a>
-                        <a href="#"><img src="./icons/whatsapp.png" alt=""></a>
-                        <a href="#"><img src="./icons/gmail.png" alt=""></a>
+                        <nav>
+                            <div>
+                                <a href="tel:+551125378413"><img src="./icons/telephone-call.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="https://wa.me/11951017589"><img src="./icons/whatsapp.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="mailto:rogial19753@gmail.com"><img src="./icons/gmail.png" alt=""></a>                            
+                            </div>
+                        </nav>
                     </div>
                 </div>
 
@@ -160,7 +173,7 @@
                     </form>
                     <div class="btn-contact-flex">
                         <hr>
-                        <button class="btn-contact">
+                        <button class="btn-contact-footer">
                             <p>Enviar</p>
                         </button>
                     </div>
@@ -169,8 +182,21 @@
             </div>
 
         </section>
-
     </main>
+
+    <footer>
+        <div class="container-section-2">
+            <div class="footer-p">
+                <p>Powered by kabsales</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
+<!-- MODAL -->
 <script src="./script/modal.js"></script>
+
+<!-- SCROLL REVEAL -->
+<script src="./script/scrollReveal.js"></script>
 </html>
