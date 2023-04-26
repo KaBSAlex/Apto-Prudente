@@ -92,25 +92,31 @@
                         </div>
                     </div>
 
-                    <div id="fade" class="hide"></div>
+                    <div id="fade-planta" class="hide"></div>
+                    <div id="fade-terraco" class="hide"></div>
+                    
 
-                    <div id="modal-planta-padrao" class="hide">
-                        <span class="close-modal">&times;</span>
+                    <div class="hide modal modal-planta">
+                        <span class="close-modal-planta">&times;</span>
                         <div><img src="./img/img-aptos/planta/planta-padrão.png" alt=""></div>
                     </div>
 
-                    <div class="planta-padrao open-modal-planta">
-                        <img class="open-modal" src="./img/img-aptos/planta/planta-padrão.png" alt="">
+                    <div class="hide modal modal-terraco">
+                        <span class="close-modal-terraco">&times;</span>
+                        <div><img src="./img/img-aptos/planta/planta-terraco-1.png" alt=""></div>
+                    </div>
+                    
+                    <div class="planta-padrao open-modal">
+                        <img class="open-modal-planta" src="./img/img-aptos/planta/planta-padrão.png" alt="">
                     </div>
 
                     <h2>TERRAÇO - 53,701m²</h2>
 
-                    <div class="planta-terraco open-modal-planta-terreo">
-                        <img src="./img/img-aptos/planta/planta-terraco-1.png" alt="">
+                    <div class="planta-terraco open-modal">
+                        <img class="open-modal-terraco" src="./img/img-aptos/planta/planta-terraco-1.png" alt="">
                     </div>
                     
                 </div>
-
             </div>
         </section>
         
@@ -167,17 +173,17 @@
 
                 <div class="contact-msg">
                     <h2>OU DEIXE UM RECADO!! ;)</h2>
-                    <form action="submit">
-                        <input type="text" placeholder="Nome:">
-                        <input type="text" placeholder="E-mail:">
-                        <textarea placeholder="Deixe uma mensagem" name="" id="" cols="30" rows="10"></textarea>
+                    <form action="https://formsubmit.co/mikael.devsystem@hotmail.com" method="POST">
+                        <input type="text" name="name" required placeholder="Nome:">
+                        <input type="email" name="email" required placeholder="E-mail:">
+                        <textarea name="message" placeholder="Deixe uma mensagem" id="" cols="30" rows="10"></textarea>
+                        <div class="btn-contact-flex">
+                            <hr>
+                            <button type="submit" class="btn-contact-footer">
+                                <p>Enviar</p>
+                            </button>
+                        </div>
                     </form>
-                    <div class="btn-contact-flex">
-                        <hr>
-                        <button class="btn-contact-footer">
-                            <p>Enviar</p>
-                        </button>
-                    </div>
                 </div>
 
             </div>

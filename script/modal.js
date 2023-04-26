@@ -1,15 +1,34 @@
 const openModalPlanta = document.querySelector(".open-modal-planta");
+const openModalTerraco = document.querySelector(".open-modal-terraco");
 
-const closeModalBtn = document.querySelector(".close-modal");
-const modal = document.querySelector("#modal-planta-padrao");
-const fade = document.querySelector("#fade");
+// fade, modal e fechar modal
+const fadePlanta = document.querySelector("#fade-planta");
+const fadeTerraco = document.querySelector("#fade-terraco");
 
-const toggleModal = () =>  {
-    modal.classList.toggle("hide")
-    fade.classList.toggle("hide")
+const modalPlanta = document.querySelector(".modal");
+const modalTerraco = document.querySelector(".modal-terraco")
+
+const closeModalPlanta = document.querySelector(".close-modal-planta");
+const closeModalTerraco = document.querySelector(".close-modal-terraco")
+//abrir modal
+const toggleModalPlanta = () =>  {
+    modalPlanta.classList.toggle("hide")
+    fadePlanta.classList.toggle("hide")
 }
 
-[openModalPlanta, closeModalBtn, fade].forEach((el) => {
-    el.addEventListener("click", () => toggleModal());
-});
+const toggleModalTerreo = () =>  {
+    modalTerraco.classList.toggle("hide")
+    fadeTerraco.classList.toggle("hide")
+}
 
+if(openModalPlanta) {
+    [openModalPlanta, closeModalPlanta, fadePlanta].forEach((el) => {
+        el.addEventListener("click", () => toggleModalPlanta());
+    });
+} 
+
+if(openModalTerraco) {
+    [openModalTerraco, closeModalTerraco, fadeTerraco].forEach((el2) => {
+        el2.addEventListener("click", () => toggleModalTerreo());
+    });
+}

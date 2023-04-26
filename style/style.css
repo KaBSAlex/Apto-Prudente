@@ -333,7 +333,8 @@ footer {
 
 /* MODAL */
 
-#fade {
+#fade-planta,
+#fade-terraco {
     background: rgba(0, 0, 0, 0.466);
     position: fixed;
     top: 0;
@@ -343,7 +344,7 @@ footer {
     z-index: 5; 
 }
 
-#modal-planta-padrao {
+.modal {
     position: fixed;
     margin: 0 auto;
     top: 50%;
@@ -352,17 +353,18 @@ footer {
     z-index: 10;
 }
 
-#modal-planta-padrao img {
+.modal img {
     width: 100vw;
     max-width: 90vw;
     height: 100%;
 }
 
-.open-modal-planta {
+.open-modal-planta,
+.open-modal-terraco {
     cursor: pointer;
 }
 
-.close-modal {
+.close-modal-planta {
     font-size: 4rem;
     color: rgb(10, 10, 10);
     position: fixed;
@@ -371,12 +373,28 @@ footer {
     right: 10px;
 }
 
-#modal-planta-padrao.hide,
-#fade.hide {
+.close-modal-terraco {
+    font-size: 4rem;
+    color: rgb(10, 10, 10);
+    position: fixed;
+    cursor: pointer;  
+    top: -11rem;
+    right: 10px;
+}
+
+.modal-planta.hide,
+#fade-planta.hide {
     opacity: 0;
     z-index: -1;
 }
 
-#modal-planta-padrao, #fade {
+.modal-terraco.hide,
+#fade-terraco.hide {
+    opacity: 0;
+    z-index: -1;
+}
+
+
+.modal, #fade {
     transition: .5s;
 }
