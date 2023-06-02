@@ -40,7 +40,7 @@ h2 {
 /* HOME */
 
 .background-home {
-    background-image: url(../img/background-home.jpg);
+    background-image: url(../img/bkg-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -59,15 +59,17 @@ h2 {
 }
 
 .box-home {
+    margin: 0 auto;
     background-color: rgba(50, 50, 58, 0.65);
-    padding: 3rem;
+    padding: 2rem;
     margin-bottom: 4rem;
+    width: 80%;
 }
 
 .btn-flex {
     display: flex;
     align-items: center;
-
+    margin-left: 10%;
 }
 
 .btn-flex hr {
@@ -93,14 +95,6 @@ h2 {
     background-color: rgb(99, 95, 91);
     transition: all 0.5s;
     cursor: pointer;
-}
-
-/* FIGURE PRHASE */
-
-.img-frase {
-    width: 100%;
-    position: relative;
-    margin-top: 2rem;
 }
 
 /* SECTION EMPHASIS */
@@ -142,16 +136,25 @@ h2 {
     margin-left: 1rem;
 }
 
+.text-empashis p {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
 .space-family h2 {
     margin: 2rem;
+}
+
+.space-family p {
+    margin: 2rem 0;
 }
 
 .squad-family img {
     width: 100%;
 }
 
-.squad-family p {
-    margin: 2rem;
+.planta-cond {
+    width: 100%;
 }
 
 .img-flex-family {
@@ -162,9 +165,13 @@ h2 {
 }
 
 .img-flex-family img {
-    width: 46.7%;
+    width: 46%;
     margin: 15px;
     max-width: 95%;
+}
+
+.img-enter img {
+    width: 60%;
 }
 
 /* HOME HEALTH */
@@ -200,6 +207,10 @@ h2 {
     width: 50vw;
 }
 
+.img-terraco2 {
+    display: none;
+}
+
 /* ENVORIMENTS */
 
 .envi-h1 {
@@ -210,7 +221,7 @@ h2 {
 }
 
 .envi-h1 hr {
-    width: 55%;
+    width: 100%;
     background-color: rgb(70, 67, 67);
     height: 4px;
     margin-right: 8px;
@@ -236,10 +247,12 @@ h2 {
 }
 
 .contact-group {
+    
     padding: 1rem;
-    background-image: url(../img/background-contact.png);
+    background-image: url(../img/bkg-contact-v2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 .contact-group h2 {
@@ -265,6 +278,11 @@ h2 {
     width: 30%;
 }
 
+.contact-group-desktop {
+    display: none;
+}
+
+
 .contact-msg h2{
     margin: 2rem;
 }
@@ -276,7 +294,7 @@ h2 {
 }
 
 .contact-msg form input {
-    background-color: #DBE3EB;
+    background-color: #C0DCF2;
     margin: 5px;
     padding: 6px;
     border-radius: 4px;
@@ -285,7 +303,7 @@ h2 {
 }
 
 .contact-msg form textarea {
-    background-color: #DBE3EB;
+    background-color: #C0DCF2;
     border: none;
     border-bottom: 2px solid black  ;  
     border-radius: 4px;
@@ -319,16 +337,16 @@ h2 {
 /* FOOTER */
 
 footer {
-    background-image: url(/img/back-footer.png);
+    background-image: url(/img/bkg-footer-v2.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 55vh;
 }
 
 .about-company {
     text-align: left;
-    color: rgb(54, 42, 42);
+    color: #C0DCF2;
     max-width: 80%;
 }
 

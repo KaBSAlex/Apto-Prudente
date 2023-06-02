@@ -13,7 +13,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/scrollReveal.css">
-
+    <link rel="stylesheet" href="./style/mediaQuery.css">
 </head>
 <body>
     <main>
@@ -32,11 +32,6 @@
             </div>
         </section>
 
-        <!-- IMG WITH PRHASE -->
-        <figure>
-            <img class="img-frase" src="./img/img-frase.png" alt="imagem com paisagem bonita e uma frase motivacional">
-        </figure>
-
         <!-- LANCAMENTO -->
         <section id="emphasis" class="section-emphasis">
             <div class="container-section-2">
@@ -47,7 +42,7 @@
                 </div>
 
                 <div class="section-emphasis-elements">
-                    <img src="./img/img-aptos/apto-principal.png" alt="ilustração de como vai ficar o condominio">
+                    <img class="img-apto-out" src="./img/img-aptos/apto-principal.png" alt="ilustração de como vai ficar o condominio">
                     <div class="text-empashis">
                         <h2>VILA PRUDENTE</h2>
                         <p>
@@ -64,14 +59,18 @@
 
                 <div class="space-family">
                     <h2>ESPAÇO PARA TODA FAMILIA</h2>
-                    <div class="squad-family">
-                        <img src="./img/img-aptos/planta/planta-geral.png" alt="planta geral do condominio">
+                    <div class="img-p-flex">
+                        <img class="planta-cond" src="./img/img-aptos/planta/planta-geral.png" alt="planta geral do condominio">
                         <p>Portaria - Recepção - Brinquedotecas -Playground - Salão de Festas - Churrasqueira - Salão de jogos - WC P.N.E - Expedição - Piscina Adulto - Piscina Infantil</p>
+                    </div>
+                    <div class="squad-family">
                         <div class="img-flex-family">
                             <img src="./img/img-aptos/piscina.png" alt="piscina do condominio">
                             <img src="./img/img-aptos/salao-jogos/salao-jogos-1.png" alt="salão de jogos do condominio">
                         </div>
-                        <img src="./img/img-aptos/entrada.png" alt="Ilustração da entrada do condominio">
+                        <div class="img-enter">
+                            <img src="./img/img-aptos/entrada.png" alt="Ilustração da entrada do condominio">
+                        </div>
                     </div>
                 </div>
 
@@ -113,8 +112,9 @@
 
                     <h2>TERRAÇO - 53,701m²</h2>
 
-                    <div class="planta-terraco open-modal">
+                    <div class="planta-terraco open-modal img-display-flex">
                         <img class="open-modal-terraco" src="./img/img-aptos/planta/planta-terraco-1.png" alt="planta do primeiro andar do terraço">
+                        <img class="img-terraco2" src="./img/img-aptos/planta/planta-terraco-2.png" alt="">
                     </div>
                     
                 </div>
@@ -160,16 +160,52 @@
                     <div class="icons-contact">
                         <nav>
                             <div>
-                                <a href="tel:+551125378413"><img src="./icons/telephone-call.png" alt="icone de um telefone com link"></a>
+                                <a href="tel:+551125378413"><img class="icons-width" src="./icons/telephone-call.png" alt="icone de um telefone com link"></a>
                             </div>
                             <div>
-                                <a href="https://wa.me/+5511951017589"><img src="./icons/whatsapp.png" alt="icone do whatsapp com link"></a>
+                                <a href="https://wa.me/+5511951017589"><img class="icons-width" src="./icons/whatsapp.png" alt="icone do whatsapp com link"></a>
                             </div>
                             <div>
-                                <a href="mailto:rogial19753@gmail.com"><img src="./icons/gmail.png" alt="icone de gmail com link"></a>                            
+                                <a href="mailto:rogial19753@gmail.com"><img class="icons-width" src="./icons/gmail.png" alt="icone de gmail com link"></a>                            
                             </div>
                         </nav>
                     </div>
+                </div>
+
+                <div class="contact-group-desktop">
+                    <h2>FALE COM A GENTE</h2>
+
+
+                    <div class="contact-flex">
+                        <div class="box">                            
+                            <img src="./icons/gmail.png" alt="">
+                            <h3>E-mail</h3>
+                            <p>Tem alguma dúvida?</p>
+                            <a href="mailto:rogial19753@gmail.com">
+                                <p class="p-link">rogial19753@gamil.com</p>
+                            </a>
+                        </div>
+    
+                        <div class="box">
+                            <img src="./icons/telephone-call.png" alt="">
+                            <h3>Telefone</h3>
+                            <p>Pode chamar qualquer hora</p>
+                            <a href="tel:+551125378413">
+                                <p class="p-link">(11) 2537-8413</p>
+                            </a>
+                        </div>
+    
+                        <div class="box">
+                            <img src="./icons/whatsapp.png" alt="">
+                            <h3>E-mail</h3>
+                            <p>Chat</p>
+                            <a href="https://wa.me/+5511951017589">
+                                <p class="p-link">(11) 95101-7589</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+
                 </div>
 
                 <!-- FORMS -->
@@ -187,7 +223,6 @@
                         </div>
                     </form>
                 </div>
-
             </div>
 
         </section>
